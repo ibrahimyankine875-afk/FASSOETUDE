@@ -1,0 +1,208 @@
+/* YANKINÉ — feuille de style commune (mobile d'abord, légère) */
+:root {
+  --navy: #0b1f4d;
+  --navy-2: #12306e;
+  --gold: #d4a017;
+  --gold-soft: #fff6dc;
+  --ink: #1b2233;
+  --muted: #5b6577;
+  --bg: #f6f8fc;
+  --card: #ffffff;
+  --line: #e1e6f0;
+  --ok: #1d7a46;
+  --radius: 14px;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--ink);
+  background: var(--bg);
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--navy-2); }
+a:hover { color: var(--gold); }
+
+/* En-tête */
+.site-header {
+  background: var(--navy);
+  color: #fff;
+  border-bottom: 4px solid var(--gold);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.site-header .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 16px;
+}
+.brand {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.3rem;
+  letter-spacing: 1.5px;
+}
+.brand span { color: var(--gold); }
+.nav { display: flex; gap: 14px; flex-wrap: wrap; }
+.nav a {
+  color: #dfe6f7;
+  text-decoration: none;
+  font-size: 0.92rem;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+}
+.nav a:hover,
+.nav a[aria-current="page"] { color: #fff; border-bottom-color: var(--gold); }
+
+.wrap { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+main { padding: 20px 0 40px; }
+
+/* Bandeau d'accueil */
+.hero {
+  background: linear-gradient(135deg, var(--navy), var(--navy-2));
+  color: #fff;
+  padding: 36px 0 34px;
+}
+.hero h1 { margin: 0 0 8px; font-size: 1.75rem; line-height: 1.25; }
+.hero p { margin: 0 0 18px; color: #dbe3f7; max-width: 38em; }
+
+.btn {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--navy);
+  font-weight: 700;
+  text-decoration: none;
+  padding: 11px 20px;
+  border-radius: 999px;
+  border: 0;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.btn:hover { background: #e6b52a; color: var(--navy); }
+.btn.ghost { background: transparent; color: #fff; border: 2px solid var(--gold); }
+.btn.ghost:hover { background: rgba(212, 160, 23, .15); color: #fff; }
+.btn.small { padding: 8px 14px; font-size: .92rem; }
+
+/* Titres */
+h1 { font-size: 1.6rem; line-height: 1.25; color: var(--navy); }
+h2 { font-size: 1.3rem; color: var(--navy); margin: 1.6em 0 .5em; }
+h3 { font-size: 1.1rem; color: var(--navy-2); margin: 1.3em 0 .4em; }
+.hero h1 { color: #fff; }
+.lead { color: var(--muted); font-size: 1.02rem; }
+
+/* Cartes */
+.grid { display: grid; gap: 14px; grid-template-columns: 1fr; }
+@media (min-width: 620px) { .grid.two { grid-template-columns: 1fr 1fr; } }
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+a.card:hover { border-color: var(--gold); box-shadow: 0 4px 14px rgba(11, 31, 77, .08); }
+.card h3 { margin: 0 0 4px; color: var(--navy); }
+.card p { margin: 0; color: var(--muted); font-size: .95rem; }
+.tag {
+  display: inline-block;
+  font-size: .75rem;
+  font-weight: 700;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: var(--gold-soft);
+  color: #8a6400;
+  margin-bottom: 6px;
+}
+.tag.soon { background: #eef1f7; color: var(--muted); }
+.card.soon { opacity: .75; }
+
+/* Recherche */
+.search {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 1rem;
+  border: 2px solid var(--line);
+  border-radius: 12px;
+  margin: 8px 0 18px;
+  background: #fff;
+}
+.search:focus { outline: none; border-color: var(--gold); }
+
+/* Fil d'Ariane */
+.crumbs { font-size: .88rem; color: var(--muted); margin-bottom: 6px; }
+.crumbs a { color: var(--muted); }
+
+/* Chapitre */
+.chapter { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 18px; }
+.summary {
+  background: var(--gold-soft);
+  border-left: 5px solid var(--gold);
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin: 14px 0 6px;
+}
+.summary strong { color: #8a6400; }
+.def, .formula, .tip, .warn {
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin: 16px 0;
+}
+.def { background: #eef3ff; border-left: 5px solid var(--navy-2); }
+.formula {
+  background: #f1f5ff;
+  border: 1px dashed var(--navy-2);
+  text-align: center;
+  font-size: 1.12rem;
+  overflow-x: auto;
+}
+.tip { background: #eaf7ef; border-left: 5px solid var(--ok); }
+.warn { background: #fdeeee; border-left: 5px solid #b3261e; }
+.label { display: block; font-size: .78rem; font-weight: 800; letter-spacing: .5px; text-transform: uppercase; margin-bottom: 4px; color: var(--muted); }
+.table-scroll { overflow-x: auto; margin: 16px 0; }
+table { border-collapse: collapse; width: 100%; min-width: 420px; font-size: .96rem; }
+th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; }
+th { background: var(--navy); color: #fff; }
+tr:nth-child(even) td { background: #f7f9fd; }
+figure { margin: 18px 0; }
+figcaption { font-size: .88rem; color: var(--muted); text-align: center; margin-top: 6px; }
+details { background: #fafbfe; border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; margin: 10px 0; }
+summary { cursor: pointer; font-weight: 700; color: var(--navy); }
+.pager { display: flex; justify-content: space-between; gap: 10px; margin-top: 22px; flex-wrap: wrap; }
+
+/* Publicité : l'emplacement reste invisible tant qu'il est vide */
+.ad-slot { margin: 22px 0; text-align: center; min-height: 0; }
+.ad-slot:empty { display: none; }
+.ad-slot::before { content: none; }
+
+/* Pied de page */
+.site-footer { background: var(--navy); color: #c9d3ee; padding: 22px 0; font-size: .9rem; border-top: 4px solid var(--gold); }
+.site-footer a { color: #fff; margin-right: 14px; }
+.site-footer p { margin: 8px 0 0; }
+
+/* Bandeau hors connexion / installation */
+.notice {
+  display: none;
+  background: var(--gold-soft);
+  color: #6b4d00;
+  padding: 8px 16px;
+  text-align: center;
+  font-size: .9rem;
+}
+.notice.show { display: block; }
+#install-btn { display: none; }
+#install-btn.show { display: inline-block; }
+
+@media print {
+  .site-header, .site-footer, .ad-slot, .pager, .notice { display: none; }
+  body { background: #fff; }
+}

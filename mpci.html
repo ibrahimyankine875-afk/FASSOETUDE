@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1f4d">
+  <title>Cours de MPCI — YANKINÉ</title>
+  <meta name="description" content="Cours, résumés et exercices corrigés de MPCI : algèbre, analyse, mécanique, chimie. Par semestre et par matière.">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">YANKIN<span>É</span></a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="mpci.html" aria-current="page">MPCI</a>
+        <a href="biologie-generale.html">Biologie</a>
+        <a href="a-propos.html">À propos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <p class="crumbs"><a href="index.html">Accueil</a> › MPCI</p>
+    <h1>Cours de MPCI</h1>
+    <p class="lead">Mathématiques, Physique, Chimie, Informatique. Les chapitres sont ajoutés au fur et à mesure.</p>
+
+    <input id="search" class="search" type="search" placeholder="Chercher une matière ou un chapitre…" aria-label="Rechercher">
+    <p id="no-result" class="lead" style="display:none">Aucun résultat. Essaie un autre mot.</p>
+
+    <!-- Pour ajouter un chapitre disponible : remplace la carte "Bientôt" par
+         <a class="card" href="chapitres/NOM-DU-FICHIER.html" data-search="..."> ... </a>  -->
+
+    <h2>Semestre 1</h2>
+    <div class="grid two">
+      <a class="card" href="modele-chapitre.html" data-search="algèbre 1 ensembles applications exemple">
+        <span class="tag">Exemple de chapitre</span>
+        <h3>Algèbre 1</h3>
+        <p>Page d'exemple : voici à quoi ressemblera chaque chapitre.</p>
+      </a>
+      <div class="card soon" data-search="analyse 1 suites fonctions">
+        <span class="tag soon">Bientôt</span>
+        <h3>Analyse 1</h3>
+        <p>Suites, limites, fonctions.</p>
+      </div>
+      <div class="card soon" data-search="mécanique du point physique cinématique">
+        <span class="tag soon">Bientôt</span>
+        <h3>Mécanique du point</h3>
+        <p>Cinématique et dynamique.</p>
+      </div>
+      <div class="card soon" data-search="chimie générale atomistique structure">
+        <span class="tag soon">Bientôt</span>
+        <h3>Chimie générale</h3>
+        <p>Atomistique et liaisons.</p>
+      </div>
+    </div>
+
+    <div class="ad-slot"><!-- Emplacement publicitaire : colle ici le bloc d'annonce AdSense --></div>
+
+    <h2>Semestre 2</h2>
+    <div class="grid two">
+      <div class="card soon" data-search="algèbre 2 espaces vectoriels matrices">
+        <span class="tag soon">Bientôt</span>
+        <h3>Algèbre 2</h3>
+        <p>Espaces vectoriels et matrices.</p>
+      </div>
+      <div class="card soon" data-search="analyse 2 intégrales séries">
+        <span class="tag soon">Bientôt</span>
+        <h3>Analyse 2</h3>
+        <p>Intégrales et séries.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <a href="a-propos.html">À propos</a><a href="contact.html">Contact</a><a href="confidentialite.html">Confidentialité</a>
+      <p>© YANKINÉ — Bobo-Dioulasso, Burkina Faso</p>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

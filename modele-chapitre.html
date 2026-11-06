@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1f4d">
+  <!-- MODÈLE : copie ce fichier pour chaque nouveau chapitre, puis remplace le texte. -->
+  <title>Algèbre 1 : ensembles et applications — YANKINÉ</title>
+  <meta name="description" content="Cours d'algèbre 1 (MPCI) : ensembles, applications, injection, surjection, bijection. Résumé, définitions et exercices corrigés.">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">YANKIN<span>É</span></a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="mpci.html" aria-current="page">MPCI</a>
+        <a href="biologie-generale.html">Biologie</a>
+        <a href="a-propos.html">À propos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <p class="crumbs"><a href="index.html">Accueil</a> › <a href="mpci.html">MPCI</a> › Semestre 1 › Algèbre 1</p>
+
+    <article class="chapter">
+      <h1>Ensembles et applications</h1>
+      <p class="lead">Algèbre 1 · MPCI · Semestre 1 · Chapitre 1</p>
+
+      <div class="summary">
+        <strong>Résumé en 30 secondes.</strong>
+        Une application associe à chaque élément d'un ensemble de départ un seul élément d'un ensemble d'arrivée. On la classe selon trois propriétés : injective, surjective, bijective.
+      </div>
+
+      <div class="ad-slot"><!-- Emplacement publicitaire : colle ici le bloc d'annonce AdSense --></div>
+
+      <h2>1. Les ensembles</h2>
+      <p>Un ensemble est une collection d'objets distincts appelés éléments. On écrit <em>x ∈ A</em> pour dire que <em>x</em> appartient à <em>A</em>.</p>
+
+      <div class="def">
+        <span class="label">Définition</span>
+        <strong>Inclusion.</strong> <em>A ⊂ B</em> signifie que tout élément de <em>A</em> est aussi un élément de <em>B</em>.
+      </div>
+
+      <h2>2. Les applications</h2>
+      <div class="def">
+        <span class="label">Définition</span>
+        <strong>Application.</strong> Une application <em>f : E → F</em> associe à chaque <em>x</em> de <em>E</em> un unique élément <em>f(x)</em> de <em>F</em>.
+      </div>
+
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Propriété</th><th>Idée</th><th>Condition</th></tr></thead>
+          <tbody>
+            <tr><td>Injective</td><td>Deux départs différents ne vont pas au même point</td><td>f(x) = f(y) ⇒ x = y</td></tr>
+            <tr><td>Surjective</td><td>Tout élément de F est atteint</td><td>∀ y ∈ F, ∃ x ∈ E, f(x) = y</td></tr>
+            <tr><td>Bijective</td><td>Injective et surjective à la fois</td><td>Chaque y a exactement un antécédent</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="formula">
+        <span class="label">À retenir</span>
+        f bijective ⇔ f injective <strong>et</strong> f surjective
+      </div>
+
+      <div class="tip">
+        <span class="label">Astuce de mémorisation</span>
+        Injective = « pas de collision ». Surjective = « personne n'est oublié à l'arrivée ».
+      </div>
+
+      <figure>
+        <!-- Pour une image : <img src="images/nom.webp" alt="Description de l'image" loading="lazy" width="600" height="400"> -->
+        <figcaption>Ici s'affichera un schéma ou une photo, avec sa légende.</figcaption>
+      </figure>
+
+      <div class="warn">
+        <span class="label">Attention</span>
+        Ce chapitre est un <strong>exemple de mise en page</strong>. Le contenu ci-dessus est volontairement court : il sera remplacé par ton vrai cours.
+      </div>
+
+      <h2>Exercices corrigés</h2>
+      <details>
+        <summary>Exercice 1 : f(x) = 2x + 1 de ℝ dans ℝ est-elle bijective ?</summary>
+        <p><strong>Correction.</strong> Pour tout réel <em>y</em>, l'équation 2x + 1 = y a pour unique solution x = (y − 1)/2. Chaque <em>y</em> a donc exactement un antécédent : <em>f</em> est bijective.</p>
+      </details>
+
+      <p><a class="btn small" href="#" aria-disabled="true" title="Le PDF sera ajouté ici">Télécharger le PDF du chapitre</a></p>
+
+      <div class="ad-slot"><!-- Emplacement publicitaire : colle ici le bloc d'annonce AdSense --></div>
+
+      <div class="pager">
+        <a class="btn small ghost" style="color:var(--navy);border-color:var(--navy)" href="mpci.html">← Liste des matières</a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <a href="a-propos.html">À propos</a><a href="contact.html">Contact</a><a href="confidentialite.html">Confidentialité</a>
+      <p>© YANKINÉ — Bobo-Dioulasso, Burkina Faso</p>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
