@@ -1,7 +1,7 @@
 {
-  "name": "YANKINÉ — Cours et résumés",
-  "short_name": "YANKINÉ",
-  "description": "Cours et résumés gratuits pour les étudiants MPCI et Biologie Générale.",
+  "name": "FASSOETUDE — Cours, résumés et QCM",
+  "short_name": "FASSOETUDE",
+  "description": "Cours, résumés mnémotechniques et QCM interactifs pour les étudiants de MPCI.",
   "lang": "fr",
   "start_url": "./index.html",
   "scope": "./",
